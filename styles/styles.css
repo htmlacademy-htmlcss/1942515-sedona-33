@@ -1,0 +1,282 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("fonts/pt-sans-italic.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/pt-sans-narrow-bold.woff2") format("woff2");
+  font-display: swap;
+}
+body {
+  width: 1200px;
+  height: 3315px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*             СТИЛИЗАЦИЯ HEADER                                                */
+
+.page-header {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.navigation-logo {
+  position: absolute;
+}
+.navigation-link {
+  color: black;
+}
+.navigation-search {
+  background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
+}
+.navigation-heart {
+  background-image: url(../images/Избранное.svg);
+  background-repeat: no-repeat;
+}
+.button {
+  background-image: url(../images/buthead.png);
+}
+
+/*                     СТИЛИЗАЦИЯ MAIN                                       */
+/*                   Вступительная картинка WELCOME SEDONA                                            */
+.welcom {
+  width: 1200px;
+  height: 485px;
+  background-image: url(../images/index-background.jpg);
+}
+.logo-sedona-index {
+  margin-top: 51px;
+  margin-right: 371px;
+  margin-bottom: 82px;
+  margin-left: 371px;
+}
+.welcom-sedona {
+}
+.italic-sedona-welcome {
+}
+/*             НЕБОЛЬШОЕ ОПИСАНИЕ ГОРОДА                               */
+.small-city {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+/*                      ПРИЧИНЫ ПОЕЗДКИ В ГОРОД(ТЕСТОВОЕ)                 */
+.five-principes {
+  font-size: 22px;
+  text-transform: none;
+}
+/*                     РАЗБИВКА НА БЛОКИ(ПРИЧИНЫ ПОЕЗДКИ В СЕДОНУ)     */
+.couses {
+  width: 1200px;
+  height: 1535px;
+}
+
+/*              Первое декорирование                        */
+.true-city {
+  border: white solid 1px;
+  width: 450px;
+  height: 384px;
+  background-color: #83b3d3;
+  background-repeat: no-repeat;
+}
+.photo-sedona {
+  position: absolute;
+  width: 800px;
+  height: 384px;
+  top: 968px;
+  left: 440px;
+}
+/*                       Текстовые вставки N1                            */
+.big-sedona {
+  size: 24px;
+  line-height: 28px;
+  color: white;
+  margin-top: 97px;
+}
+.description-true {
+  size: 18px;
+  line-height: 21px;
+  color: white;
+}
+/*                           Первый список                            */
+.big-suggestions {
+  size: 24px;
+  line-height: 28px;
+}
+.suggest-description {
+  size: 18px;
+  line-height: 21px;
+}
+
+/*                         Мост дьявола                 */
+.bridge-image {
+  position: absolute;
+  width: 800px;
+  height: 384px;
+  left: 0px;
+  right: 400px;
+}
+.bridge {
+  position: absolute;
+  width: 400px;
+  height: 384px;
+  background-color: #83b3d3;
+  right: 0px;
+  background-repeat: no repeat;
+}
+
+/*                 ПОИСК ОТЕЛЕЙ                    */
+
+.searching {
+  width: 1200px;
+  height: 417px;
+}
+.small-city-search {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-left: 300px;
+  margin-right: 240px;
+  margin-bottom: 29px;
+}
+.search-button {
+  width: 575px;
+  height: 60px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 108px;
+}
+
+/*                 ПОДПИСКА НА РАССЫЛКУ                     */
+.subscribtion {
+  border: 1px solid white;
+  width: 1200px;
+  height: 411px;
+  background-image: url(../images/subscribtion.jpg);
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+.subscribe-main {
+  margin-top: 97px;
+  margin-bottom: 29px;
+}
+.subscribe-info {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: none;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.subscribtion-form {
+  background-image: url(../images/background-form.png);
+  width: 720px;
+  height: 52px;
+  margin-left: 200px;
+}
+.subbuttom {
+  background-image: url(../images/subbutton.png);
+  width: 200px;
+  height: 60px;
+  margin-left: 0px;
+}
+
+/*                 FOOTER                        */
+.foot-sedona {
+  width: 1200px;
+  height: 120px;
+}
+/*.social-item-twitter {
+  background-image: url(/images/twitter.png);
+  background-repeat: no-repeat;
+}
+.social-item-facebook {
+  background-image: url(/images/social-facebook.png);
+  background-repeat: no-repeat;
+}
+.social-item-youtube {
+  background-image: url(/images/social-youtube.png);
+  background-repeat: no-repeat;
+}*/
+.phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+/*====================CATALOG============================*/
+.catalog-hotels {
+  width: 1200px;
+  height: 2317px;
+  background-image: url(../images/catalog-background\ 1.jpg);
+  background-repeat: no-repeat;
+}
+.hotels-sedona-big {
+  size: 60px;
+  font-style: bold;
+  color: white;
+}
+.hotels-list {
+  border: white solid 1px;
+  margin-top: 100px;
+  width: 1056px;
+  height: 1500px;
+}
+.price {
+  size: 18px;
+}
+.secondsub {
+  margin-top: 50px;
+
+  background-image: none;
+  size: 16px;
+  line-height: 26px;
+  text-transform: none;
+}
+.small-city-subscribe-2 {
+  color: black;
+}
+.five-principes-2 {
+  margin: 0;
+  color: black;
+}
