@@ -56,6 +56,7 @@ li {
   width: 133px;
   height: 37px;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .buttons-warm {
