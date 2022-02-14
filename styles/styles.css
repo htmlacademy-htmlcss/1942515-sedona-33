@@ -80,6 +80,7 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   width: 450px;
   margin: 0;
   padding: 0;
@@ -131,7 +132,7 @@ body {
   margin-bottom: 93px;
 }
 .cold-light {
-  background-color: rgba(131, 179, 211, 0, 2);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 /*             СТИЛИЗАЦИЯ HEADER                                                */
 
@@ -227,6 +228,7 @@ body {
 .big-suggestions {
   size: 24px;
   line-height: 28px;
+  opacity: 10;
 }
 .suggest-description {
   size: 18px;
@@ -342,6 +344,7 @@ body {
 .main-inner {
   flex-grow: 1;
 }
+
 .inner-header {
   display: flex;
   flex-direction: column;
@@ -353,13 +356,15 @@ body {
   padding: 0;
   margin-bottom: 44px;
 }
+.catalog-wrapper{
+  padding:0px 71px;
+}
 .hotels-sedona-title {
-  padding-top: 30px;
-  padding-right: 561px;
-  padding-left: 30px;
-  margin-bottom: 5px;
+  margin-right: 600px;
+  color:white;
   font-size: 60px;
   font-weight: 700;
+  line-height 77px;
   color: #ffffff;
 }
 .breadcrumps {
@@ -375,16 +380,14 @@ body {
 .home-1 {
   width: 12px;
   height: 12px;
-  margin: 8px 11px 51px 73px;
 }
 .arrow {
   margin: 0 auto;
   width: 5px;
-  margin: 11px 10px 52px 80px;
 }
 .breadcrumps-link {
   font-size: 16px;
-  margin-left: 10px;
+ 
 }
 
 .hotels-filter {
