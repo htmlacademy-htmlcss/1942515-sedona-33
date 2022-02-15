@@ -32,21 +32,76 @@ html {
 }
 
 body {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  margin: 0;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-style: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
 }
-.main-container {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1200px;
+  min-height: 100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.index-main {
   flex-grow: 1;
 }
-li {
+.page-header li {
   list-style-type: none;
+}
+/*========================ШАПКА==============================================*/
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+.navigation-logo-link {
+  width: 139px;
+  margin: 0;
+}
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 450px;
+  margin: 0;
+  padding: 0;
+}
+.navigation-item {
+  margin-left: 34px;
+}
+
+.user-list {
+  width: 264px;
+  margin-left: auto;
+}
+.navigation-link {
+  display: block;
+  margin-left: auto;
+
+  margin: 0;
+  color: #000000;
+  text-decoration: none;
+  min-width: 16px;
+  min-height: 22px;
 }
 .buttons {
   display: flex;
@@ -73,82 +128,30 @@ li {
   text-transform: uppercase;
   color: white;
   border-radius: 10px;
-  padding: 15px 200px;
+  padding: 10px 10px;
   margin-bottom: 93px;
 }
 .cold-light {
-  background-color: rgba(131, 179, 211, 0, 2);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 /*             СТИЛИЗАЦИЯ HEADER                                                */
 
-.page-header {
-  margin: 0 auto;
-  background-color: white;
-  color: black;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: bold;
-}
-.navigation {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  justify-content: space-between;
-}
-.navigation-logo {
-  width: 140px;
-  margin: 0;
-  padding: 0;
-  margin-right: 30px;
-}
-.navigation-lists {
-  display: flex;
-  justify-content: space-between;
-  width: 920px;
-  height: 70px;
-}
-.navigation-list {
-  margin: 0;
-  padding: 0;
-  width: 400px;
-  justify-content: flex-start;
-}
-.navigation-link {
-  margin: 0;
-  padding: 0;
-  max-width: 310px;
-  margin-left: auto;
-  justify-content: flex-end;
-  color: black;
-  text-decoration: none;
-}
-.navigation-search {
-  background-image: url(../images/search.svg);
-  background-repeat: no-repeat;
-}
-.navigation-heart {
-  background-image: url(../images/favorite.svg);
-  background-repeat: no-repeat;
-}
-
 .page-container {
   width: 1200px;
-  margin: 0 auto;
 }
 
 /*                     СТИЛИЗАЦИЯ MAIN                                       */
 /*                   Вступительная картинка WELCOME SEDONA                                            */
 .main-logo {
-  display: block;
+  margin: 0;
+  padding: 0;
   width: 1200px;
   height: 485px;
   background-image: url(../images/background-index.jpg);
 }
-.logo-sedona-index {
-  margin-top: 51px;
-  margin-right: 371px;
-  margin-bottom: 82px;
-  margin-left: 371px;
+.main-logo-title {
+  margin: 0;
+  padding: 0;
 }
 
 /*             НЕБОЛЬШОЕ ОПИСАНИЕ ГОРОДА                               */
@@ -168,8 +171,8 @@ li {
   height: auto;
 }
 .sedona-couses {
+  display: flex;
   width: 1200px;
-  height: 384px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -179,7 +182,6 @@ li {
 .sedona-city-couses {
   margin-right: 0;
   width: 400px;
-  height: 384px;
   background-color: #83b3d3;
   background-repeat: no-repeat;
 }
@@ -188,15 +190,14 @@ li {
   height: 384px;
   margin: 0;
   padding: 0;
-  background-image: url("../images/photo-1.jpg");
 }
 /*                       Текстовые вставки N1                            */
 .suggestions {
+  display: flex;
+  justify-content: space-between;
   width: 1200px;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
 }
 .sedona-couses-title {
   size: 24px;
@@ -217,14 +218,17 @@ li {
 }
 .suggestions-item {
   width: 400px;
-  height: 384;
+
   margin: 0 auto;
   padding: 89px 75px 79px 75px;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .big-suggestions {
   size: 24px;
   line-height: 28px;
+  opacity: 10;
 }
 .suggest-description {
   size: 18px;
@@ -254,7 +258,6 @@ li {
 .subscribtion {
   margin: 0 auto;
   width: 1200px;
-  height: 411px;
   background-image: url(../images/background-subscribe.jpg);
   font-size: 30px;
   line-height: 36px;
@@ -262,10 +265,9 @@ li {
   text-align: center;
   color: white;
   text-align: center;
-  margin-top: 0;
 }
 .subscribe-main {
-  margin-top: 97px;
+  padding-top: 97px;
   margin-bottom: 29px;
 }
 .subscribe-info {
@@ -281,6 +283,7 @@ li {
   display: flex;
   margin: 0 auto;
   width: 720px;
+  padding-bottom: 94px;
 }
 .mail-form {
   width: 800px;
@@ -292,115 +295,121 @@ li {
 
 /*                 FOOTER                        */
 .footer-container {
-  display: flex;
   width: 1200px;
+  height: 120px;
   margin: 0 auto;
 }
-.foot-sedona {
+.page-footer {
   display: flex;
+  justify-content: space-between;
   color: black;
 }
-.foot-sedona a {
+.page-footer a {
   color: black;
 }
 .social-list {
-  justify-content: flex-start;
-  width: 107px;
-  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 44px;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
-
+.social-item {
+  width: 56px;
+  height: 44px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  margin-top: 50px;
+}
+.social-item:nth-child(3n) {
+  margin-right: 0;
+}
 .phone {
-  margin: 0;
-  padding: 0;
   width: 720px;
-  height: 40px;
   font-size: 40px;
   line-height: 40px;
-  justify-content: center;
+  margin-top: 40px;
   color: black;
   text-decoration: none;
 }
 .htmlAcademy-logo {
-  justify-content: flex-end;
   width: 115px;
   height: 34px;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
+  margin-top: 42px;
 }
 
 /*====================CATALOG============================*/
 .main-inner {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0;
+  flex-grow: 1;
 }
+
 .inner-header {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 1200px;
-  height: 408px;
   background-image: url(../images/background-filters.jpg);
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   margin-bottom: 44px;
 }
+.catalog-wrapper{
+  padding:0px 71px;
+}
 .hotels-sedona-title {
-  width: 528px;
-  display: flex;
-  justify-content: space-between;
-  margin: 35px 520px 5px 71px;
-  font-size: 50px;
+  margin-right: 600px;
+  color:white;
+  font-size: 60px;
   font-weight: 700;
+  line-height 77px;
   color: #ffffff;
 }
 .breadcrumps {
+  text-decoration: none;
   width: 30px;
   display: flex;
   justify-content: space-between;
 }
 .breadcrumps-item {
+  list-style-type: none;
   margin: 0 auto;
 }
 .home-1 {
   width: 12px;
   height: 12px;
-  margin: 8px 11px 51px 73px;
 }
 .arrow {
   margin: 0 auto;
   width: 5px;
-  margin: 11px 10px 52px 80px;
 }
 .breadcrumps-link {
   font-size: 16px;
-  margin-left: 10px;
+ 
 }
+
 .hotels-filter {
-  display: flex;
   justify-content: space-between;
-}
-.filter-infrastructure {
-  font-size: 20px;
-  font-weight: 700px;
-  color: white;
-  margin-top: 45px;
-  margin-left: 71px;
+  display: flex;
 }
 .hotels-filter-group {
-  display: block;
-
   margin: 0;
   padding: 0;
   border: none;
 }
+.filter-infrastructure {
+  align-items: 100px;
+  font-size: 20px;
+  font-weight: 700px;
+  color: white;
+}
+
 .services {
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 .services-item {
   text-align: left;
@@ -436,20 +445,21 @@ li {
 }
 .catalog-hotels {
   width: 1056px;
-  margin: 0 auto;
+  margin-bottom: 30px;
 }
 .catalog-cards {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 1056px;
-  height: 896px;
 }
 .housing-card-item {
   padding: 20px;
   width: 300px;
+  text-decoration: none;
+  list-style: none;
 }
-.house-card-title {
+.housing-card-link {
   text-decoration: none;
   color: black;
 }
@@ -462,13 +472,6 @@ li {
   justify-content: space-between;
 }
 
-.catalog-more {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  width: 1056px;
-}
 .pagination-show-more {
   width: 620px;
   padding: 17px 150px;
@@ -477,34 +480,48 @@ li {
   font-weight: 700;
   text-align: center;
   color: #e5e5e5;
-  margin-bottom: 60px;
+}
+.paginnation-item {
+  width: 1056px;
+  display: flex;
+}
+
+.pagination-link {
+  list-style: none;
+  text-decoration: none;
+  width: 55px;
+  margin-right: 8px;
 }
 .paginnation-item {
   display: flex;
   justify-content: space-between;
+  width: 1056px;
+  margin-bottom: 73px;
+}
+.pagenations-hotels-onpage {
+  display: flex;
+  justify-content: flex-end;
+  width: 386px;
+}
+.pagenation-hotels-list {
+  width: 175px;
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 23px;
+}
+.pagination-pages {
+  display: flex;
+  justify-content: flex-start;
+  width: 373px;
+  margin-right: 300px;
+  text-decoration: none;
+  list-style-type: none;
 }
 
-.pagination-link {
-  width: 55px;
-  height: 55px;
-  padding: 1px 1px;
-}
-.paginnation-item {
-  margin: 0;
-  padding: 0;
-  width: 1056px;
-}
-.pagination {
-  width: 670px;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.pagenations-pages {
-  display: flex;
-  width: 386px;
+.pagination-hotels {
+  width: 160px;
+  height: 48px;
+  margin-left: 68px;
 }
 .hotels-sedona-big {
   size: 60px;
