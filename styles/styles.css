@@ -128,11 +128,14 @@ body {
   text-transform: uppercase;
   color: white;
   border-radius: 10px;
-  padding: 10px 10px;
+  padding: 15px 150px;
   margin-bottom: 93px;
 }
 .cold-light {
   background-color: rgba(131, 179, 211, 0.12);
+}
+.cold-light12 {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 /*             СТИЛИЗАЦИЯ HEADER                                                */
 
@@ -155,10 +158,11 @@ body {
 }
 
 /*             НЕБОЛЬШОЕ ОПИСАНИЕ ГОРОДА                               */
-.sedona-description {
+.sedona-description-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-bottom: 31px;
 }
 /*                      ПРИЧИНЫ ПОЕЗДКИ В ГОРОД(ТЕСТОВОЕ)                 */
 .sedona-description-benefits {
@@ -206,7 +210,7 @@ body {
   margin-top: 97px;
 }
 
-.suggestions .description-true {
+.description-true {
   size: 18px;
   line-height: 21px;
   color: white;
@@ -250,15 +254,12 @@ body {
   margin-right: 240px;
   margin-bottom: 29px;
 }
-.searching-button {
-  margin: 0 auto;
-  padding: 0;
-}
+
 /*                 ПОДПИСКА НА РАССЫЛКУ                     */
 .subscribtion {
-  margin: 0 auto;
   width: 1200px;
   background-image: url(../images/background-subscribe.jpg);
+  background-repeat: no-repeat;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -266,18 +267,17 @@ body {
   color: white;
   text-align: center;
 }
+
 .subscribe-main {
-  padding-top: 97px;
   margin-bottom: 29px;
+  padding-top: 94px;
 }
-.subscribe-info {
-  font-weight: normal;
-  font-style: normal;
+.sedona-description-info {
   font-size: 22px;
   line-height: 26px;
+  font-style: normal;
   text-transform: none;
-  text-align: center;
-  margin-bottom: 6px;
+  margin-bottom: 46px;
 }
 .subscribtion-form {
   display: flex;
@@ -287,10 +287,13 @@ body {
 }
 .mail-form {
   width: 800px;
+  border-radius: 10px;
 }
 .subscribe-button {
   width: 200px;
   height: 60px;
+  padding-left: 0px;
+  border-radius: 10px;
 }
 
 /*                 FOOTER                        */
@@ -356,15 +359,15 @@ body {
   padding: 0;
   margin-bottom: 44px;
 }
-.catalog-wrapper{
-  padding:0px 71px;
+.catalog-wrapper {
+  padding: 0px 71px;
 }
 .hotels-sedona-title {
   margin-right: 600px;
-  color:white;
+  color: white;
   font-size: 60px;
   font-weight: 700;
-  line-height 77px;
+  line-height: 77px;
   color: #ffffff;
 }
 .breadcrumps {
@@ -387,7 +390,6 @@ body {
 }
 .breadcrumps-link {
   font-size: 16px;
- 
 }
 
 .hotels-filter {
@@ -542,8 +544,7 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-.secondsub-description {
-}
+
 .small-city-subscribe-2 {
   color: black;
 }
