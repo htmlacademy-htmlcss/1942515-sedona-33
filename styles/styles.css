@@ -450,30 +450,59 @@ body {
   margin-bottom: 30px;
 }
 .catalog-cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 1056px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 50px 58px;
 }
 .housing-card-item {
-  padding: 20px;
-  width: 300px;
+  display: grid;
+  grid-template-columns: 133px 160px;
+  gap: 16px;
   text-decoration: none;
   list-style: none;
 }
+.house-card-image {
+  grid-column: 1/-1;
+  margin-bottom: 16px;
+}
+.house-card-title {
+  grid-column: 1/-1;
+  text-align: left;
+  margin: 0;
+}
 .housing-card-link {
+  grid-column: 1/-1;
   text-decoration: none;
   color: black;
 }
-.cards-buttons-position {
-  display: flex;
-  justify-content: space-around;
+.card-link {
+  display: grid;
+  grid-column: 1/1;
 }
-.housing-stars {
-  display: flex;
-  justify-content: space-between;
-}
+.hotel-item {
+  grid-column: 1/1;
 
+  text-align: left;
+}
+.hotel-price {
+  grid-column: 2/-1;
+  text-align: left;
+}
+.cards-buttons-position {
+  grid-column: 1/-1;
+}
+.card-button {
+  grid-column: 2/-1;
+}
+.star-block {
+  grid-column: 1/1;
+  text-align: left;
+}
+.hotel-reit {
+  margin: 0;
+  grid-column: 2/-1;
+  text-align: left;
+}
 .pagination-show-more {
   width: 620px;
   padding: 17px 150px;
