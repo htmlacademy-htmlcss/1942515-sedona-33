@@ -32,8 +32,7 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   height: 100%;
   font-family: "PT Sans", sans-serif;
   font-style: 400;
@@ -57,6 +56,8 @@ body {
   margin: 0 auto;
   width: 1200px;
   min-height: 100%;
+}
+.catalog-wrapper {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 .index-main {
@@ -82,16 +83,20 @@ body {
   align-items: center;
   width: 450px;
 
-  margin-left: 239px;
+  margin-left: 149px;
   padding: 0;
 }
 .navigation-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
   margin-left: 34px;
 }
 
 .user-list {
   width: 264px;
   margin-left: auto;
+  margin-right: 24px;
 }
 .navigation-logo-link {
   position: absolute;
@@ -100,7 +105,7 @@ body {
 .navigation-logo-sedona {
   position: absolute;
   top: 5px;
-  left: 70px;
+  left: 0px;
 }
 .navigation-link {
   display: block;
@@ -130,16 +135,7 @@ body {
   background-color: rgba(131, 179, 211, 1);
   color: black;
 }
-.button-search {
-  margin: 0 auto;
-  padding: 0;
-  width: 575px;
-  text-transform: uppercase;
-  color: white;
-  border-radius: 10px;
-  padding: 15px 150px;
-  margin-bottom: 93px;
-}
+
 .cold-light {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -168,15 +164,16 @@ body {
 
 /*             НЕБОЛЬШОЕ ОПИСАНИЕ ГОРОДА                               */
 .sedona-description-title {
-  font-size: 30px;
+  font-size: 26px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-bottom: 31px;
+  margin-bottom: 40px;
 }
 /*                      ПРИЧИНЫ ПОЕЗДКИ В ГОРОД(ТЕСТОВОЕ)                 */
 .sedona-description-benefits {
-  font-size: 22px;
+  font-size: 20px;
   text-transform: none;
+  margin-bottom: 80px;
 }
 /*                     РАЗБИВКА НА БЛОКИ(ПРИЧИНЫ ПОЕЗДКИ В СЕДОНУ)     */
 .couses {
@@ -213,16 +210,18 @@ body {
   padding: 0;
 }
 .sedona-couses-title {
-  size: 24px;
+  font-size: 24px;
   line-height: 28px;
   color: white;
   margin-top: 97px;
+  margin-bottom: 30px;
 }
 
 .description-true {
-  size: 18px;
+  font-size: 18px;
   line-height: 21px;
   color: white;
+  margin-bottom: 30px;
 }
 /*                           Первый список                            */
 .first-list {
@@ -231,21 +230,23 @@ body {
 }
 .suggestions-item {
   width: 400px;
-
   margin: 0 auto;
   padding: 89px 75px 79px 75px;
   text-decoration: none;
   list-style-type: none;
 }
-
+.suggestions-image {
+  margin: 0;
+}
 .big-suggestions {
-  size: 24px;
+  font-size: 24px;
   line-height: 28px;
   opacity: 10;
 }
 .suggest-description {
   size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 /*                 ПОИСК ОТЕЛЕЙ                    */
@@ -253,15 +254,13 @@ body {
 .searching {
   width: 1200px;
   margin: 0 auto;
+  margin-top: 123px;
 }
 .searching-hotel-sedona {
-  font-size: 30px;
+  font-size: 26px;
   line-height: 36px;
   text-transform: uppercase;
-  font-weight: 700px;
-  margin-left: 300px;
-  margin-right: 240px;
-  margin-bottom: 29px;
+  font-weight: 700;
 }
 
 /*                 ПОДПИСКА НА РАССЫЛКУ                     */
@@ -291,6 +290,25 @@ body {
   text-transform: none;
   margin-bottom: 46px;
 }
+.searching-benefits {
+  font-size: 22px;
+  line-height: 26px;
+  font-style: normal;
+  text-transform: none;
+  margin-bottom: 47px;
+}
+.button-search {
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 150px;
+  margin-bottom: 93px;
+  font-size: 17px;
+  line-height: 36px;
+}
 .subscribtion-form {
   display: flex;
   margin: 0 auto;
@@ -303,7 +321,7 @@ body {
   border-radius: 10px;
 }
 .subscribe-button {
-  width: 200px;
+  width: 150px;
   height: 60px;
   padding-left: 0px;
   border-radius: 10px;
@@ -536,12 +554,6 @@ body {
   align-items: center;
 }
 
-.pagination-link {
-  list-style: none;
-  text-decoration: none;
-  width: 55px;
-  margin-right: 8px;
-}
 .paginnation-item {
   display: flex;
   justify-content: space-between;
@@ -565,13 +577,19 @@ body {
 }
 .pagination-pages {
   display: flex;
-  justify-content: flex-start;
-
+  max-width: 370px;
   padding: 0;
   text-decoration: none;
   list-style-type: none;
 }
-
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+.pagination-link {
+  list-style: none;
+  text-decoration: none;
+  width: 40px;
+}
 .pagination-hotels {
   width: 160px;
   height: 48px;
