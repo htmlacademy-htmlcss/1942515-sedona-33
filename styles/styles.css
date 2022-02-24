@@ -28,7 +28,6 @@
 }
 
 html {
-  width: 100%;
   height: 100%;
 }
 
@@ -70,21 +69,20 @@ body {
 .navigation {
   display: flex;
   width: 1060px;
+  height: 70px;
   margin: 0 auto;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
 }
-.navigation-logo-link {
-  width: 139px;
-  margin: 0;
-}
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   width: 450px;
-  margin: 0;
+
+  margin-left: 239px;
   padding: 0;
 }
 .navigation-item {
@@ -95,9 +93,18 @@ body {
   width: 264px;
   margin-left: auto;
 }
+.navigation-logo-link {
+  position: absolute;
+  width: 139px;
+}
+.navigation-logo-sedona {
+  position: absolute;
+  top: 5px;
+  left: 70px;
+}
 .navigation-link {
   display: block;
-  margin-left: auto;
+  margin: auto;
 
   margin: 0;
   color: #000000;
@@ -150,7 +157,7 @@ body {
 .main-logo {
   margin: 0;
   padding: 0;
-  width: auto;
+  width: 1200px;
   height: 485px;
   background-image: url(../images/background-index.jpg);
 }
@@ -173,12 +180,12 @@ body {
 }
 /*                     РАЗБИВКА НА БЛОКИ(ПРИЧИНЫ ПОЕЗДКИ В СЕДОНУ)     */
 .couses {
-  width: auto;
+  width: 1200px;
   height: auto;
 }
 .sedona-couses {
   display: flex;
-  width: auto;
+  width: 1200px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -192,7 +199,7 @@ body {
   background-repeat: no-repeat;
 }
 .photo-sedona {
-  width: auto;
+  width: 800px;
   height: 384px;
   margin: 0;
   padding: 0;
@@ -201,7 +208,7 @@ body {
 .suggestions {
   display: flex;
   justify-content: space-between;
-  width: auto;
+  width: 1200px;
   margin: 0;
   padding: 0;
 }
@@ -219,11 +226,11 @@ body {
 }
 /*                           Первый список                            */
 .first-list {
-  width: auto;
+  width: 1200px;
   margin: 0 auto;
 }
 .suggestions-item {
-  width: auto;
+  width: 400px;
 
   margin: 0 auto;
   padding: 89px 75px 79px 75px;
@@ -244,7 +251,7 @@ body {
 /*                 ПОИСК ОТЕЛЕЙ                    */
 
 .searching {
-  width: auto;
+  width: 1200px;
   margin: 0 auto;
 }
 .searching-hotel-sedona {
@@ -259,7 +266,7 @@ body {
 
 /*                 ПОДПИСКА НА РАССЫЛКУ                     */
 .subscribtion {
-  width: auto;
+  width: 1200px;
   background-image: url(../images/background-subscribe.jpg);
   background-repeat: no-repeat;
   font-size: 30px;
@@ -271,6 +278,9 @@ body {
 }
 
 .subscribe-main {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
   margin-bottom: 29px;
   padding-top: 94px;
 }
@@ -284,11 +294,11 @@ body {
 .subscribtion-form {
   display: flex;
   margin: 0 auto;
-  width: auto;
+  width: 720px;
   padding-bottom: 94px;
 }
 .mail-form {
-  margin-left: 200px;
+  width: 800px;
   width: 600px;
   border-radius: 10px;
 }
@@ -301,7 +311,7 @@ body {
 
 /*                 FOOTER                        */
 .footer-container {
-  width: auto;
+  width: 1200px;
   height: 120px;
   margin: 0 auto;
 }
@@ -333,7 +343,7 @@ body {
   margin-right: 0;
 }
 .phone {
-  width: auto;
+  width: 720px;
   font-size: 40px;
   line-height: 40px;
   margin-top: 40px;
@@ -509,16 +519,21 @@ body {
 }
 .pagination-show-more {
   width: 620px;
-  padding: 17px 150px;
+  padding: 17px 140px;
   margin: 0 auto;
   font-size: 20px;
   font-weight: 700;
+  line-height: 26px;
   text-align: center;
   color: #e5e5e5;
+  margin-top: 94px;
+  margin-bottom: 60px;
+  border: none;
 }
 .paginnation-item {
   width: 1056px;
   display: flex;
+  align-items: center;
 }
 
 .pagination-link {
@@ -537,18 +552,22 @@ body {
   display: flex;
   justify-content: flex-end;
   width: 386px;
+  align-items: center;
 }
 .pagenation-hotels-list {
-  width: 175px;
+  width: 210px;
+  padding: 0;
+  margin-right: 50px;
   font-weight: 400px;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 24px;
+  text-align: center;
 }
 .pagination-pages {
   display: flex;
   justify-content: flex-start;
-  width: 373px;
-  margin-right: 300px;
+
+  padding: 0;
   text-decoration: none;
   list-style-type: none;
 }
@@ -556,7 +575,6 @@ body {
 .pagination-hotels {
   width: 160px;
   height: 48px;
-  margin-left: 68px;
 }
 .hotels-sedona-big {
   size: 60px;
