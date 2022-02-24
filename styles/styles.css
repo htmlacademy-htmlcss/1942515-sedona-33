@@ -32,6 +32,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   height: 100%;
   font-family: "PT Sans", sans-serif;
@@ -54,8 +56,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 1200px;
-  max-width: 65%;
 }
 .catalog-wrapper {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
@@ -144,16 +144,12 @@ body {
 }
 /*             СТИЛИЗАЦИЯ HEADER                                                */
 
-.page-container {
-  width: 1200px;
-}
-
 /*                     СТИЛИЗАЦИЯ MAIN                                       */
 /*                   Вступительная картинка WELCOME SEDONA                                            */
 .main-logo {
   margin: 0;
   padding: 0;
-  width: 1200px;
+
   height: 485px;
   background-image: url(../images/background-index.jpg);
 }
@@ -177,12 +173,12 @@ body {
 }
 /*                     РАЗБИВКА НА БЛОКИ(ПРИЧИНЫ ПОЕЗДКИ В СЕДОНУ)     */
 .couses {
-  width: 1200px;
   height: auto;
 }
 .sedona-couses {
   display: flex;
-  width: 1200px;
+
+  min-width: 50%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -191,7 +187,7 @@ body {
 /*              Первое декорирование                        */
 .sedona-city-couses {
   margin-right: 0;
-  width: 100%;
+
   background-color: #83b3d3;
   background-repeat: no-repeat;
 }
@@ -205,7 +201,7 @@ body {
 .suggestions {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+
   margin: 0;
   padding: 0;
 }
@@ -225,7 +221,6 @@ body {
 }
 /*                           Первый список                            */
 .first-list {
-  width: 1200px;
   margin: 0 auto;
 }
 .suggestions-item {
@@ -252,7 +247,6 @@ body {
 /*                 ПОИСК ОТЕЛЕЙ                    */
 
 .searching {
-  width: 1200px;
   margin: 0 auto;
   margin-top: 123px;
 }
@@ -265,7 +259,6 @@ body {
 
 /*                 ПОДПИСКА НА РАССЫЛКУ                     */
 .subscribtion {
-  width: 1200px;
   background-image: url(../images/background-subscribe.jpg);
   background-repeat: no-repeat;
   font-size: 30px;
@@ -329,7 +322,6 @@ body {
 
 /*                 FOOTER                        */
 .footer-container {
-  width: 1200px;
   height: 120px;
   margin: 0 auto;
 }
@@ -383,7 +375,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 1200px;
   background-image: url(../images/background-filters.jpg);
   background-repeat: no-repeat;
   margin: 0;
@@ -471,13 +462,11 @@ body {
   margin-bottom: 53px;
 }
 .hotels-list {
-  width: 1057px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 53px;
 }
 .catalog-hotels {
-  width: 1056px;
   margin-bottom: 30px;
 }
 .catalog-cards {
@@ -604,7 +593,6 @@ body {
 }
 .secondsub {
   margin: 0 auto;
-  width: 1200px;
   height: 411px;
   background-color: white;
   color: black;
