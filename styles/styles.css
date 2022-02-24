@@ -55,7 +55,7 @@ body {
   flex-direction: column;
   margin: 0 auto;
   width: 1200px;
-  min-height: 100%;
+  max-width: 60%;
 }
 .catalog-wrapper {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
