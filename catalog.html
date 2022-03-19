@@ -21,31 +21,31 @@
    
 
                 <ul class="navigation-list">
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="index.html">Главная</a>
+                    <li class="navigation-item ">
+                        <a class="navigation-link current-link" href="index.html">Главная</a>
                     </li> 
-                    <li class="navigation-item">  
+                    <li class="navigation-item ">  
                          <a class="navigation-link" href="about-sedona.html">О Седоне</a>
                     </li>
                      <li class="navigation-item">
-                            <a class="navigation-link current-link" href="catalog.html">Гостиницы</a>
+                            <a class="navigation-link" >Гостиницы</a>
                     </li>
                     
                 </ul>
                 <ul class="navigation-list user-list">
-                    <li class="navigation-item user-link">
-                        <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span> <svg class="navigation-icon" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m19 17-3.7-3.7A8 8 0 0 0 17 8.4a8 8 0 0 0-8-8 8 8 0 1 0 5 14.4l3.6 3.8L19 17ZM9 14.7a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" /></svg></a>
+                    <li class="navigation-item user-item">
+                        <a class="navigation-link user-link" href="#"><span class="visually-hidden">Поиск</span> <svg class="navigation-icon" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m19 17-3.7-3.7A8 8 0 0 0 17 8.4a8 8 0 0 0-8-8 8 8 0 1 0 5 14.4l3.6 3.8L19 17ZM9 14.7a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" /></svg></a>
                      </li>
-                     <li class="navigation-item user-link">
-                         <a class="navigation-link" href="#"><span class="visually-hidden">Лайки</span><svg class="navigation-icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.4 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6 0c1.3 0 2.5.5 3.5 1.3C10.5.5 12 0 13.1 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.3.2-.5.3-.9.3Zm-6-9.5 6.1 6.9 6.3-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.8 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4A3.7 3.7 0 0 0 6 2.1a3.3 3.3 0 0 0-3.3 3.3c0 .9.3 1.6.7 2.1Z" /></svg> 
-                         <span class="likes-circle">12</span></a>
+                     <li class="navigation-item user-item">
+                         <a class="navigation-link user-link" href="#"><span class="visually-hidden">Лайки</span><svg class="navigation-icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.4 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6 0c1.3 0 2.5.5 3.5 1.3C10.5.5 12 0 13.1 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.3.2-.5.3-.9.3Zm-6-9.5 6.1 6.9 6.3-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.8 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4A3.7 3.7 0 0 0 6 2.1a3.3 3.3 0 0 0-3.3 3.3c0 .9.3 1.6.7 2.1Z" /></svg> 
+                         <sup class="likes-circle">12</sup></a>
                       </li>
-                      <li class="navigation-item user-link">
-                         <a class="navigation-link navigation-button" href="#">ХОЧУ СЮДА!</a>
+                      <li class="navigation-item user-item">
+                         <a class="navigation-link button-header" href="">ХОЧУ СЮДА!</a>
                       </li>
-             </ul>
-            </nav>
-        </header> 
+            </ul>
+        </nav>
+    </header> 
             <main class="main-inner ">
                   
                     <header class="inner-header catalog-wrapper">
@@ -65,7 +65,7 @@
                                       <img class="arrow" src="./images/svg-arrow-filters.svg">    
                                 </li>                   
                                 <li class="breadcrumps-item">
-                                    <a class="breadcrumps-link" href="#">Гостиницы</a>    
+                                    <a class="breadcrumps-link">Гостиницы</a>    
                                  </li>
                         </ul>
                            <!-- Список гостиниц по фильтрам-->
@@ -102,32 +102,32 @@
                                         Тип жилья:
                                 </legend> 
                                     <ul class="services-list-1">  
-                                        <li class="services-item">
+                                        <li class="services-item radio-item">
                                             <label class="infrastructure">
                                                 <input class="visually-hidden control-input" type="radio" name="hotels" value="hotel" checked>
                                                 <span class="control-mark-radio"></span>
-                                                <span class="hotel-type-group">Гостиница</span> 
+                                                <span class="hotel-type-group radio-group">Гостиница</span> 
                                             </label>
                                         </li>
-                                        <li class="services-item">
+                                        <li class="services-item radio-item">
                                             <label class="infrastructure">
                                                 <input class="visually-hidden control-input" type="radio" name="hotels" value="motel">
                                                 <span class="control-mark-radio"></span>
-                                                <span class="hotel-type-group">Мотель</span>  
+                                                <span class="hotel-type-group radio-group">Мотель</span>  
                                             </label>
                                         </li>
-                                        <li class="services-item">
+                                        <li class="services-item radio-item">
                                             <label class="infrastructure">
                                                 <input class="visually-hidden control-input" type="radio" name="hotels" value="appartment">
                                                 <span class="control-mark-radio"></span>
-                                                <span class="hotel-type-group">Апартаменты</span> 
+                                                <span class="hotel-type-group radio-group">Апартаменты</span> 
                                             </label>
                                         </li>
                     
                                     </ul>
                             </fieldset>        
                             <fieldset class="hotels-filter-group hotels-filter-group-2">
-                                <legend class="filter-infrastructure price-filter">Стоимость,Р:</legend> 
+                                <legend class="filter-infrastructure price-filter">Стоимость, Р:</legend> 
                          
                             <div class="range">
                                 
@@ -169,16 +169,18 @@
                     <section class="hotels-list">               
                     <div class="hotels-searching">
                               <p class="searching-resulst"> Найдено гостиниц: 38</p>  
-                        
-                        <select class="hotels-price-selector sorting-type" >
+                    </div>
+                        <div class="hotels-price-selector">
+                        <select class="price-selector" >
                         <option value="price cheap">Сначала дешёвые</option>
                         <option value="price popular">Сначала популярные</option>
                         <option value="price expensive">Сначала дорогие</option>
                          </select>
+                        </div>
                         
                          <ul class="hotels-icon">
                         <li class="searching-buttons-hotels hotels-cards-position"><a href="#" class="hotels-search-links">
-                            <svg  width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"fill="#000"; /></svg>
+                            <svg class="svg-hotels" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"fill="#000"; /></svg>
                             <span class="visually-hidden">Показать список</span>
                         </a>
                     </li>
@@ -190,11 +192,12 @@
                     </li>
                     <li class="searching-buttons-hotels hotels-cards-position">
                         <a class="hotels-search-links" href="#">
-                            <svg  width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"fill="#000" /></svg>  
+                            <svg class="svg-hotels"  width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"fill="#000" /></svg>  
                             <span class="visually-hidden">Показать карточки</span>
                         </a>
                     </li>
                     </ul>
+               
                 </section>
             
                           <!--КАРТОЧКИ ГОСТИНИЦ-->
@@ -279,7 +282,8 @@
                         </section> 
             
                             <section class="paginnation-item ">
-                                 <ul class="pagination-pages">
+                                 <div class="pagination-list">
+                                <ul class="pagination-pages">
                                     <li class="pagination-item">
                                         <a class="pagination-link pagination-prev pagination-disabled" href="#">
                                             <span class="visually-hidden">Предыдущая страница</span>
@@ -306,6 +310,7 @@
                                     </li>
                
                                     <li class="pagination-item"></li>
+                                </div>
                                         <a class="pagination-link pagination-next" href="#">
                                             <span class="visually-hidden">Следующая страница</span>
                                         </a>
@@ -316,6 +321,7 @@
                                 </ul> 
                                 <div class="pagenations-hotels-onpage ">
                                     <p class="pagenation-hotels-list">Гостиниц на странице:</p>
+                                  
                                     <select class="pagination-hotels">
                                         <option>1</option>
                                         <option>2</option>
