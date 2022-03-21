@@ -2,37 +2,22 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("fonts/pt-sans-italic.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
-  font-display: swap;
-}
-
 html {
   height: 100%;
 }
 
 body {
-  max-width: 1280px;
+  min-width: 1280px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -75,7 +60,6 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  height: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -86,32 +70,16 @@ body {
   flex-wrap: wrap;
   margin: 0;
   width: 450px;
-  height: 60px;
-  margin-left: 224px;
+  margin-left: 239px;
   padding: 0;
-  padding-top: 10px;
 }
 .navigation-item {
   margin: 0;
   padding: 0;
-  padding-top: 5px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 26px;
-  margin-left: 34px;
+  line-height: 20px;
 }
-.user-item {
-  margin: 0;
-  width: 50px;
-  height: 60px;
-}
-.user-list {
-  width: 310px;
-  margin: 0;
-  padding: 0;
-  margin-left: 185px;
-}
-
 .navigation-logo-link {
   position: absolute;
   width: 139px;
@@ -129,8 +97,7 @@ body {
   margin: auto;
   color: #000000;
   text-decoration: none;
-  min-width: 16px;
-  min-height: 22px;
+  padding: 20px 17px 20px 17px;
 }
 .navigation-link:hover {
   color: #756257;
@@ -143,25 +110,39 @@ body {
 .navigation-link:active {
   opacity: 0.3;
 }
-.user-link {
+.user-list {
+  width: 310px;
+  margin: 0;
+  padding: 0;
+  margin-left: 180px;
+}
+.user-item {
   position: relative;
+  width: 42px;
+}
+.user-item:last-child {
+  width: 160px;
+  padding: 10px 0px 10px 20px;
+}
+.user-link {
+  position: absolute;
+  margin: auto;
   line-height: 22px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .button-header {
   width: 160px;
   padding: 9px 0px;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: #756257;
   border-radius: 4px;
-
-  margin-left: 9px;
 }
 .navigation-icon {
   position: absolute;
@@ -174,33 +155,22 @@ body {
 }
 .current-link::before {
   position: absolute;
-  right: 0px;
-  bottom: -20px;
-  left: 0px;
+  top: 60px;
+  right: 16px;
+  left: 16px;
   height: 0px;
   border: 1px solid #756257;
   background-color: #0e0d0c;
   content: "";
 }
-
-.navigation-button {
-  width: 160px;
-  padding: 9px 0px;
-  font-size: 16px;
-  line-height: 20px;
-  color: white;
-  background-color: #756257;
-  border-radius: 4px;
-  margin-left: 9px;
-}
-.navigation-button:hover {
-  color: white;
+.button-header:hover {
+  color: rgb(255, 255, 255);
   background-color: #615048;
 }
-.navigation-button:focus {
+.button-header:focus {
   outline: 3px solid #83b3d3;
 }
-.navigation-button:active {
+.button-header:active {
   background-color: #615048;
   color: rgba(255, 255, 255, 0.3);
   outline: none;
@@ -214,11 +184,11 @@ body {
   line-height: 20px;
   font-weight: 400;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 0;
   margin: 0;
   position: absolute;
-  transform: translate(4px, 5px);
+  transform: translate(4px, -7px);
 }
 .navigation-link sup:active {
   opacity: 0.3;
@@ -229,13 +199,13 @@ body {
   align-items: center;
   justify-content: center;
   width: 133px;
-  height: 37px;
+  min-height: 37px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .navigation-link:hover .navigation-icon {
   fill: #756257;
@@ -258,7 +228,7 @@ body {
 .button-coldlight {
   border: none;
   background-color: rgba(131, 179, 211, 1);
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .button-coldlight:hover {
   background-color: #68a2ca;
@@ -281,6 +251,7 @@ body {
   margin: 0;
   padding: 0;
   height: 485px;
+  background: rgb(226, 200, 200);
   background-image: url(../images/background-index.jpg);
   margin-bottom: 65px;
 }
@@ -295,6 +266,7 @@ body {
 
 /*             НЕБОЛЬШОЕ ОПИСАНИЕ ГОРОДА                               */
 .sedona-description-title {
+  min-height: 282px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -342,12 +314,12 @@ body {
 .suggestions {
   display: flex;
   justify-content: space-between;
-  height: 384px;
+  min-height: 384px;
   margin: 0;
   padding: 0;
 }
 .suggestions-item {
-  width: 100%;
+  width: 400px;
   margin: 0 auto;
   padding: 184px 75px 79px 75px;
   text-decoration: none;
@@ -380,7 +352,7 @@ body {
 .sedona-couses-title {
   font-size: 24px;
   line-height: 28px;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-top: 97px;
   margin-bottom: 30px;
   font-weight: 700;
@@ -390,7 +362,7 @@ body {
 .description-true {
   font-size: 18px;
   line-height: 21px;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-bottom: 30px;
   font-weight: 400;
 }
@@ -453,13 +425,14 @@ body {
 
 /*                 ПОДПИСКА НА РАССЫЛКУ                     */
 .subscribtion {
+  background: rgb(226, 200, 200);
   background-image: url(../images/background-subscribe.jpg);
   background-repeat: no-repeat;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -476,7 +449,6 @@ body {
   font-style: normal;
   text-transform: none;
   margin-bottom: 46px;
-  padding-right: 61px;
 }
 .searching-benefits {
   font-size: 22px;
@@ -485,12 +457,17 @@ body {
   text-transform: none;
   margin-bottom: 66px;
 }
+.searching-button-index {
+  min-width: 280px;
+  min-height: 60px;
+}
 .button-search {
   margin: 0 auto;
   padding: 0;
-  width: 280px;
+  min-width: 575px;
+  min-height: 60px;
   text-transform: uppercase;
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 10px;
   padding: 18px 147px;
   margin-bottom: 93px;
@@ -548,7 +525,7 @@ body {
 }
 
 .mail-form:focus:invalid {
-  border: 2px solid red;
+  border: 2px solid #ff5757;
   border-radius: 10px 0px 0px 10px;
 }
 .mail-form:disabled,
@@ -569,7 +546,7 @@ body {
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .subscribe-button:hover {
   border: none;
@@ -587,10 +564,10 @@ body {
 .page-footer {
   display: flex;
 
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .page-footer a {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .social-list {
   display: flex;
@@ -660,7 +637,7 @@ body {
   border-radius: 10px;
 }
 .htmlAcademy-logo {
-  fill: black;
+  fill: rgb(0, 0, 0);
 }
 .htmlAcademy-logo:hover {
   fill: #756257;
@@ -670,7 +647,6 @@ body {
 }
 /*====================CATALOG============================*/
 .main-inner {
-  margin: 0 auto;
   flex-grow: 1;
 }
 
@@ -678,13 +654,11 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background: rgb(226, 200, 200);
   background-image: url(../images/background-filters.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
-  padding: 0;
-
-  box-shadow: none;
+  margin: 0 auto;
 }
 .catalog-wrapper {
   padding: 0px 72px;
@@ -692,47 +666,71 @@ body {
 .hotels-sedona-title {
   margin: 0;
   padding: 0;
-  margin-right: 530px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 60px;
   font-weight: 700;
   line-height: 63px;
   color: #ffffff;
-  padding-top: 44px;
-  padding-bottom: 0;
-  margin-bottom: 0px;
   text-align: start;
+  margin-top: 46px;
 }
 .breadcrumps {
+  position: relative;
+  display: flex;
   margin: 0;
   padding: 0;
   padding-left: 3px;
-  display: block;
   align-items: center;
   text-decoration: none;
   width: 30px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 .breadcrumps-item {
   display: block;
   list-style-type: none;
-  margin: 0 auto;
+  margin-right: 26px;
+}
+
+.arrow {
+  position: absolute;
+  top: 7px;
+  left: 25px;
+  right: 0;
+  bottom: 0;
+  width: 5px;
+  height: 8px;
+
+  background-image: url(../images/svg-arrow-filters.svg);
+  background-repeat: no-repeat;
+}
+.breadcrumps-item:after + .arrow {
+  background-image: url(../images/svg-arrow-filters.svg);
 }
 .breadcrumps-home {
   display: block;
   margin: 0 auto;
   margin-right: 10px;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumps-item:hover {
+  opacity: 0.6;
+}
+.breadcrumps-item:focus {
+  outline: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 .arrow {
   display: block;
   margin: 0 auto;
   margin-right: 10px;
+  margin: 0;
+  padding: 0;
 }
 .breadcrumps-link {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   display: block;
   font-size: 16px;
   font-weight: 400;
@@ -750,24 +748,30 @@ body {
 }
 .hotels-filter {
   display: flex;
+  margin-bottom: 55px;
 }
 .hotels-filter-group {
   text-align: start;
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 65px;
-  margin-right: 60px;
+  margin-right: 64px;
+}
+.radio-filters-group {
+  margin-right: 169px;
 }
 .hotels-filter-group-2 {
-  margin-left: 113px;
+  margin-right: 61px;
 }
 .filter-infrastructure {
   align-items: 100px;
   font-size: 20px;
   font-weight: 700px;
-  color: white;
-  margin-bottom: 22px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 29px;
+}
+.radio-infrastrukture {
+  padding-left: 9px;
 }
 
 .range-scale {
@@ -775,25 +779,46 @@ body {
   width: 287px;
   height: 4px;
   margin-top: 26px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.3);
+  margin: 0;
+  padding: 0;
 }
 .range-bar {
   position: absolute;
   width: 220px;
   height: 4px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
 }
 .range-toggle {
   position: absolute;
   width: 25px;
   left: 215px;
   height: 25px;
-  background-color: white;
-  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: none;
 }
 .range-toggle:hover {
-  background-color: #68a2ca;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.range-toggle:focus {
+  border: none;
+  background: #ffffff;
+  outline: 3px solid #83b3d3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.range-toggle:active {
+  background: #ffffff;
+  border: 2px solid #83b3d3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
 }
 .toggle-min {
   top: -8px;
@@ -811,7 +836,7 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 }
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
@@ -822,20 +847,35 @@ body {
 }
 .range-input {
   background-color: transparent;
-  width: 128px;
+  width: 124px;
   height: 43px;
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
   border: 2px solid #ffffff;
   border-radius: 4px;
-  color: white;
+  color: rgb(255, 255, 255);
   padding-left: 10px;
 }
-
+.range-input:hover {
+  border: 2px solid #ffffff;
+  opacity: 0.6;
+  border-radius: 4px 0px 0px 4px;
+}
+.range-input:focus {
+  outline: 2px solid #ffffff;
+  box-shadow: 0px 0px 0px 3px #81b3d2;
+  border-radius: 4px 0px 0px 4px;
+}
+.range-input:active {
+  background: #756257;
+  border: 2px solid #ffffff;
+  border-radius: 4px 0px 0px 4px;
+}
 .min-range {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+  padding-left: 17px;
 }
 .max-range {
   border-top-left-radius: 0px;
@@ -845,6 +885,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+  margin-bottom: 27px;
 }
 .place-min {
   position: relative;
@@ -852,7 +893,7 @@ body {
   height: 23px;
   font-size: 18px;
   line-height: 23px;
-  color: white;
+  color: rgb(255, 255, 255);
   opacity: 0.3;
   left: 114px;
   top: 35px;
@@ -863,21 +904,20 @@ body {
   position: relative;
   font-size: 18px;
   line-height: 23px;
-  color: white;
+  color: rgb(255, 255, 255);
   opacity: 0.3;
   right: 35px;
   top: 11px;
 }
 .reset-button {
   border: none;
-  background-image: none;
   background: transparent;
   background-color: transparent;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
-  margin-top: 21px;
+  padding-left: 14px;
 }
 .reset-button:hover {
   opacity: 0.6;
@@ -897,6 +937,7 @@ body {
   padding: 0;
   text-align: left;
   list-style-type: none;
+  margin-bottom: 10px;
 }
 .services-list-2 {
   margin-left: 100px;
@@ -905,7 +946,7 @@ body {
   position: relative;
   font-size: 18px;
   font-weight: 400;
-  color: white;
+  color: rgb(255, 255, 255);
   line-height: 34px;
 }
 .control-mark {
@@ -914,29 +955,44 @@ body {
   height: 20px;
   top: 0px;
   left: 1px;
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 4px;
 }
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   top: 6px;
-  left: 6px;
+  left: 4px;
   width: 12px;
   height: 10px;
   background-image: url(../images/svg-checked.svg);
   content: "";
+}
+.control-mark:hover {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+.control-mark:focus {
+  background: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
 }
 .control-mark-radio {
   position: absolute;
   width: 20px;
   height: 20px;
   top: 3px;
-  left: 10px;
-  background: white;
+  left: 3px;
+  background: rgb(255, 255, 255);
   border-radius: 4px;
   border-radius: 50%;
   margin-right: 10px;
+  margin: 0;
+  padding: 0;
+}
+.control-mark-radio:focus {
+  background: #ffffff;
+  outline: 3px solid #83b3d3;
+  box-sizing: border-box;
 }
 .control-input[type="radio"]:checked + .control-mark-radio::before {
   position: absolute;
@@ -955,18 +1011,16 @@ body {
   padding-left: 41px;
 }
 .services-item {
+  position: relative;
   margin: 0;
   padding: 0;
-  margin-top: 4px;
-  margin-bottom: 1px;
-  margin-right: 23px;
+  margin-top: 1px;
 }
 .radio-item {
   margin: 0;
-  margin-top: 3px;
 }
 .radio-group {
-  margin-top: 12px;
+  margin: 0px;
 }
 .services-item:last-child {
   margin-bottom: 13px;
@@ -976,7 +1030,7 @@ body {
   border-radius: 4px;
 }
 .form-button {
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: #83b3d3;
   border-radius: 4px;
   border: none;
@@ -984,7 +1038,8 @@ body {
   line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 15px 30px;
+  padding: 14px 30px;
+  margin-bottom: 19px;
 }
 .form-button:hover {
   background-color: #68a2ca;
@@ -996,12 +1051,9 @@ body {
   opacity: 0.3;
 }
 .service-buttons {
-  margin-top: 4px;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
-
-  border: none;
+  padding-top: 59px;
 }
 
 .hotels-cards-position {
@@ -1026,6 +1078,7 @@ body {
   font-style: 700;
   line-height: 39px;
   text-transform: uppercase;
+  margin-right: 13px;
 }
 .searching-resulst {
   min-width: 475px;
@@ -1035,21 +1088,19 @@ body {
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
-  margin-top: 45px;
+  margin-top: 48px;
 }
 .hotels-price-selector {
   width: 287px;
   border: 2px;
   border-color: #e5e5e5;
+  margin-right: 100px;
 }
 .price-selector {
   width: 265px;
   height: 45px;
   padding: 0;
-  padding-right: 70px;
-  padding-bottom: 4px;
-  margin-top: 45px;
-  margin-left: 60px;
+  margin-top: 44px;
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
@@ -1058,13 +1109,14 @@ body {
 }
 .hotels-list {
   display: flex;
+  margin-bottom: 32px;
 }
 .hotels-icon {
   display: flex;
-  width: 180px;
+  width: 160px;
   height: 50px;
   margin-top: 45px;
-  margin-left: 100px;
+  padding: 0;
 }
 .hotels-search-buttons {
   width: 50px;
@@ -1074,9 +1126,9 @@ body {
 }
 .searching-buttons-hotels {
   position: relative;
-  width: 45px;
-  height: 45px;
-  margin-right: 10px;
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
   border: none;
   list-style-type: none;
 }
@@ -1090,7 +1142,6 @@ body {
 }
 .searching-buttons-hotel:nth-child(3) {
   margin-right: 0px;
-  margin-left: 0px;
 }
 .hotels-search-links {
   width: 50px;
@@ -1100,20 +1151,21 @@ body {
   margin-bottom: 30px;
 }
 .catalog-cards {
-  margin-top: 51px;
-  margin-left: 19px;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 300px);
-  gap: 55px 57px;
+  grid-template-columns: repeat(3, 340px);
+  gap: 6px 18px;
+  margin-bottom: 60px;
 }
 .housing-card-item {
   display: grid;
-  grid-template-columns: 133px 160px;
+  grid-template-columns: 130px 160px;
   gap: 3px 15px;
   text-decoration: none;
   list-style: none;
+  padding: 20px 20px 30px 20px;
 }
+
 .house-card-image {
   grid-column: 1/-1;
   margin-bottom: 10px;
@@ -1140,13 +1192,13 @@ body {
   border-radius: 4px;
 }
 .card-buttons {
-  width: 140px;
-  height: 37px;
+  min-width: 140px;
+  min-height: auto;
   border: none;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-left: 19px;
 }
 .card-button.hover {
@@ -1166,7 +1218,7 @@ body {
   line-height: 21px;
   font-weight: 700;
   background-color: #7db54f;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-left: 21px;
 }
 .green-buttos:hover {
@@ -1188,7 +1240,7 @@ body {
 .housing-card-link {
   grid-column: 1/-1;
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .card-link {
   display: grid;
@@ -1227,16 +1279,14 @@ body {
 .pagination-show-more {
   width: 620px;
   height: 60px;
-
   margin: 0 auto;
   font-size: 17px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
   color: #e5e5e5;
-  margin-top: 91px;
   margin-left: 221px;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
   border: none;
 }
 .pagination-list {
@@ -1246,6 +1296,7 @@ body {
 .paginnation-item {
   display: flex;
   align-items: center;
+  margin-bottom: 56px;
 }
 
 .paginnation-item {
@@ -1253,35 +1304,38 @@ body {
 }
 .pagenations-hotels-onpage {
   display: flex;
-  width: 450px;
-  margin-left: 261px;
+  width: 601px;
 }
 .pagenation-hotels-list {
-  width: 175px;
   padding: 0;
-  margin-right: 50px;
+  padding-left: 1px;
+  margin-top: 0px;
   font-weight: 400px;
   font-size: 18px;
   line-height: 23px;
   text-align: center;
-  margin-top: 5px;
-  margin-right: 51px;
+  padding-left: 301px;
+}
+.pagination-options {
+  width: 160px;
+  height: 70px;
 }
 .pagination-pages {
   display: flex;
-  max-width: 370px;
+  max-width: 378px;
   padding: 0;
-  text-decoration: none;
   list-style-type: none;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 .pagination-item {
-  margin-right: px;
+  margin-right: 8px;
   width: 55px;
   height: 55px;
+  background: #83b3d3;
+  border-radius: 4px;
 }
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
+.pagination-item:last-child {
+  margin: 0;
 }
 .pagination-link {
   list-style: none;
@@ -1290,20 +1344,21 @@ body {
   font-size: 20px;
   list-style: 26px;
   font-weight: 700;
+  padding: 20px 20px;
 }
 .pagination-hotels {
   width: 160px;
-  height: 48px;
+  height: 46px;
   border: 2px solid #e6e6e6;
-  margin-top: -8px;
+  padding: 3px 13px;
 }
 .hotels-sedona-big {
   size: 60px;
   font-style: bold;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .pagination-buttons {
-  padding: 10px 10px;
+  padding: 8px 8px;
   border-radius: 0;
 }
 .pagination-buttons {
@@ -1317,8 +1372,8 @@ body {
   background-color: #68a2ca;
 }
 .pagination-current {
-  background: transparent;
-  color: black;
+  background-color: #fdfafa;
+  color: #000000;
   padding: 10px 10px;
 }
 .second-sub-title {
@@ -1326,8 +1381,6 @@ body {
   font-weight: 700;
   line-height: 36px;
   margin-bottom: 45px;
-  margin-top: 56px;
-  padding-right: 58px;
 }
 .price {
   size: 18px;
@@ -1337,7 +1390,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .five-principes-2 {
   font-size: 22px;
@@ -1345,7 +1398,7 @@ body {
   font-weight: 400;
   text-transform: none;
   margin: 0;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .modal-container {
   position: fixed;
@@ -1494,7 +1547,7 @@ body {
   border: none;
   font-size: 20px;
   line-height: 40px;
-  color: white;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
 .button-plus {
