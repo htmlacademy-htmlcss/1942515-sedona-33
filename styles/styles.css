@@ -118,22 +118,18 @@ body {
 }
 .user-item {
   position: relative;
-  width: 42px;
 }
 .user-item:last-child {
   width: 160px;
-  padding: 10px 0px 10px 20px;
+  padding: 9px 11px 13px 23px;
 }
 .user-link {
-  position: absolute;
-  margin: auto;
-  line-height: 22px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
+  padding: 30px 20px 30px 20px;
 }
-
+.user-item:focus {
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+}
 .button-header {
   width: 160px;
   padding: 9px 0px;
@@ -146,7 +142,7 @@ body {
 }
 .navigation-icon {
   position: absolute;
-  top: 26px;
+  top: 0px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -188,7 +184,7 @@ body {
   padding: 0;
   margin: 0;
   position: absolute;
-  transform: translate(4px, -7px);
+  transform: translate(2px, -18px);
 }
 .navigation-link sup:active {
   opacity: 0.3;
@@ -266,7 +262,7 @@ body {
 
 /*             НЕБОЛЬШОЕ ОПИСАНИЕ ГОРОДА                               */
 .sedona-description-title {
-  min-height: 282px;
+  min-height: auto;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -321,7 +317,7 @@ body {
 .suggestions-item {
   width: 400px;
   margin: 0 auto;
-  padding: 184px 75px 79px 75px;
+  padding: 184px 75px 60px 75px;
   text-decoration: none;
   list-style-type: none;
 }
@@ -403,7 +399,7 @@ body {
   margin-top: 20px;
 }
 .second-list {
-  margin-bottom: 91px;
+  margin-bottom: 61px;
 }
 .deskription-2 {
   margin-top: 30px;
@@ -413,7 +409,7 @@ body {
 
 .searching {
   margin: 0 auto;
-  margin-bottom: 105px;
+  margin-bottom: 92px;
 }
 .searching-hotel-sedona {
   margin-top: 0px;
@@ -425,6 +421,7 @@ body {
 
 /*                 ПОДПИСКА НА РАССЫЛКУ                     */
 .subscribtion {
+  min-height: 411px;
   background: rgb(226, 200, 200);
   background-image: url(../images/background-subscribe.jpg);
   background-repeat: no-repeat;
@@ -434,6 +431,7 @@ body {
   text-align: center;
   color: rgb(255, 255, 255);
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .subscribe-main {
@@ -455,7 +453,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   text-transform: none;
-  margin-bottom: 66px;
+  margin-bottom: 55px;
 }
 .searching-button-index {
   min-width: 280px;
@@ -464,12 +462,12 @@ body {
 .button-search {
   margin: 0 auto;
   padding: 0;
-  min-width: 575px;
-  min-height: 60px;
+  width: 280px;
+  min-height: auto;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   border-radius: 10px;
-  padding: 18px 147px;
+  padding: 12px 147px;
   margin-bottom: 93px;
   font-size: 20px;
   line-height: 36px;
@@ -495,7 +493,7 @@ body {
   display: flex;
   margin: 0 auto;
   width: auto;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
   padding-left: 200px;
 }
 .subscribtion-form {
@@ -509,11 +507,13 @@ body {
   border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  width: 560px;
+  width: 603px;
   padding: 10px 20px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
 }
 .mail-form:hover {
   background: #e6e6e6;
@@ -547,6 +547,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
+  box-sizing: border-box;
 }
 .subscribe-button:hover {
   border: none;
@@ -675,7 +676,6 @@ body {
   margin-top: 46px;
 }
 .breadcrumps {
-  position: relative;
   display: flex;
   margin: 0;
   padding: 0;
@@ -687,24 +687,29 @@ body {
 }
 .breadcrumps-item {
   display: block;
+  position: relative;
   list-style-type: none;
   margin-right: 26px;
 }
 
 .arrow {
-  position: absolute;
-  top: 7px;
-  left: 25px;
-  right: 0;
-  bottom: 0;
-  width: 5px;
-  height: 8px;
-
   background-image: url(../images/svg-arrow-filters.svg);
   background-repeat: no-repeat;
 }
-.breadcrumps-item:after + .arrow {
+.breadcrumps-item:after {
+  position: absolute;
+  top: 7px;
+  right: -15px;
+  width: 8px;
+  height: 8px;
+  width: 5px;
+  height: 8px;
   background-image: url(../images/svg-arrow-filters.svg);
+  background-repeat: no-repeat;
+  content: "";
+}
+.breadcrumps-item:last-child::after {
+  content: none;
 }
 .breadcrumps-home {
   display: block;
@@ -751,6 +756,8 @@ body {
   margin-bottom: 55px;
 }
 .hotels-filter-group {
+  max-width: 152px;
+  min-height: auto;
   text-align: start;
   margin: 0;
   padding: 0;
@@ -761,6 +768,8 @@ body {
   margin-right: 169px;
 }
 .hotels-filter-group-2 {
+  max-width: 306px;
+  min-height: auto;
   margin-right: 61px;
 }
 .filter-infrastructure {
@@ -794,9 +803,9 @@ body {
 }
 .range-toggle {
   position: absolute;
-  width: 25px;
+  width: 20px;
   left: 215px;
-  height: 25px;
+  height: 20px;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   border: none;
@@ -889,8 +898,8 @@ body {
 }
 .place-min {
   position: relative;
-  width: 20px;
-  height: 23px;
+  max-width: 20px;
+  max-height: 23px;
   font-size: 18px;
   line-height: 23px;
   color: rgb(255, 255, 255);
@@ -902,6 +911,8 @@ body {
 }
 .place-max {
   position: relative;
+  max-width: 20px;
+  max-height: 23px;
   font-size: 18px;
   line-height: 23px;
   color: rgb(255, 255, 255);
@@ -1052,6 +1063,8 @@ body {
 }
 .service-buttons {
   display: flex;
+  max-width: 162px;
+  min-height: auto;
   flex-direction: column;
   padding-top: 59px;
 }
@@ -1109,13 +1122,14 @@ body {
 }
 .hotels-list {
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 .hotels-icon {
   display: flex;
   width: 160px;
   height: 50px;
-  margin-top: 45px;
+  margin-top: 43px;
+  margin-left: 25px;
   padding: 0;
 }
 .hotels-search-buttons {
@@ -1314,7 +1328,7 @@ body {
   font-size: 18px;
   line-height: 23px;
   text-align: center;
-  padding-left: 301px;
+  padding-left: 297px;
 }
 .pagination-options {
   width: 160px;
@@ -1329,8 +1343,8 @@ body {
 }
 .pagination-item {
   margin-right: 8px;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   background: #83b3d3;
   border-radius: 4px;
 }
@@ -1358,7 +1372,7 @@ body {
   color: rgb(255, 255, 255);
 }
 .pagination-buttons {
-  padding: 8px 8px;
+  padding: 8px 4px;
   border-radius: 0;
 }
 .pagination-buttons {
