@@ -411,7 +411,7 @@ body {
 
 .searching {
   margin: 0 auto;
-  margin-bottom: 95px;
+  margin-bottom: 92px;
 }
 .searching-hotel-sedona {
   margin-top: 0px;
@@ -464,7 +464,7 @@ body {
   margin: 0 auto;
   padding: 0;
   width: 280px;
-  min-height: auto;
+  min-height: 40px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   border-radius: 10px;
