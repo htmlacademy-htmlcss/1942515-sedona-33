@@ -202,6 +202,7 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
+  border: none;
 }
 .navigation-link:hover .navigation-icon {
   fill: #756257;
@@ -295,6 +296,7 @@ body {
   width: 100%;
   background-color: #83b3d3;
   background-repeat: no-repeat;
+  min-height: 384px;
 }
 .photo-sedona {
   width: 100%;
@@ -340,7 +342,7 @@ body {
   background-position-y: 89px;
 }
 .suggestions-item-2 {
-  padding: 96px 75px 108px 76px;
+  padding: 96px 80px 108px 76px;
   margin: 0;
   line-height: px;
 }
@@ -409,7 +411,7 @@ body {
 
 .searching {
   margin: 0 auto;
-  margin-bottom: 92px;
+  margin-bottom: 95px;
 }
 .searching-hotel-sedona {
   margin-top: 0px;
@@ -435,11 +437,10 @@ body {
 }
 
 .subscribe-main {
+  padding-top: 94px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-
-  padding-top: 94px;
 }
 .sedona-description-info {
   font-size: 22px;
@@ -468,7 +469,6 @@ body {
   color: rgb(255, 255, 255);
   border-radius: 10px;
   padding: 12px 147px;
-  margin-bottom: 93px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -480,8 +480,9 @@ body {
   border-radius: 10px;
 }
 .button-search:focus {
+  border: none;
   background: #615048;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
   border-radius: 10px;
 }
 .button-search:active {
@@ -1435,6 +1436,7 @@ body {
 }
 .modal-content {
   display: flex;
+  position: relative;
   flex-direction: column;
   padding: 59px 70px 70px 66px;
 }
@@ -1451,6 +1453,18 @@ body {
   background-image: url(../images/svg-close.svg);
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 50%;
+}
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  border: 3px solid #83b3d3;
+}
+.modal-close-button:active {
+  opacity: 0.3;
+  border: none;
 }
 .modal-title {
   display: block;
@@ -1464,9 +1478,11 @@ body {
   line-height: 40px;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 55px;
+  margin-bottom: 57px;
 }
 .auth-form {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-size: 18px;
   line-height: 40px;
@@ -1504,12 +1520,28 @@ body {
   width: 155px;
 }
 .field {
-  width: 340px;
+  width: 420px;
   margin-top: 0;
   padding-left: 19px;
   padding-top: 10px;
   border: none;
 }
+
+.field:hover {
+  background: #e6e6e6;
+  border-radius: 4px;
+}
+.field:focus {
+  background: #e6e6e6;
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+.field:active {
+  background: #ffffff;
+  outline: 2px solid #000000;
+  border-radius: 4px;
+}
+
 .date-error {
   display: block;
   min-height: 20x;
@@ -1549,6 +1581,7 @@ body {
   width: 25px;
   padding: 7px;
   height: 32px;
+  margin-right: 1px;
   margin-bottom: 40px;
   align-items: center;
   border: none;
@@ -1569,22 +1602,52 @@ body {
   height: 41px;
   border: none;
 }
+.button-plus:focus {
+  outline: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
 .button-minus {
   width: 45px;
   height: 50px;
   border: none;
+  margin-right: 2px;
+}
+.button-minus:focus {
+  outline: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 .plus {
   padding-top: 6px;
   opacity: 0.3;
 }
 .plus-mines {
-  padding-bottom: 5px;
-  opacity: 0.3;
+  fill: rgb(0, 0, 0, 0.3);
+}
+.plus-mines:hover {
+  fill: rgb(0, 0, 0);
+}
+.plus-mines:active {
+  fill: rgb(0, 0, 0, 0.2);
+}
+.plus {
+  fill: rgb(0, 0, 0, 0.3);
+}
+.plus:hover {
+  fill: rgb(0, 0, 0);
+}
+.plus:active {
+  fill: rgb(0, 0, 0, 0.2);
 }
 .modal-date-button {
-  width: 60px;
-  height: 49px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 70px;
+  background-image: url(../images/svg-date-buton.svg);
+  background-repeat: no-repeat;
+  background-position: 17px 24px;
   border: none;
   padding: 0;
 }
