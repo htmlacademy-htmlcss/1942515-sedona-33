@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Город Sedona</title>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
   </head>
   <body>
     <div class="wrapper shadow-wrapper">
@@ -75,9 +75,9 @@
         <header class="inner-header">
           <div class="catalog-wrapper">
             <h2 class="hotels-sedona-title">Гостиницы Седоны</h2>
-            <ul class="breadcrumps">
-              <li class="breadcrumps-item" tabindex="1">
-                <a class="breadcrumps-home" href="index.html"
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item" tabindex="1">
+                <a class="breadcrumbs-home" href="index.html"
                   ><svg
                     width="12"
                     height="12"
@@ -95,8 +95,8 @@
                 </a>
               </li>
 
-              <li class="breadcrumps-item" tabindex="1">
-                <a class="breadcrumps-link">Гостиницы</a>
+              <li class="breadcrumbs-item" tabindex="1">
+                <a class="breadcrumbs-link">Гостиницы</a>
                 <span class="arrow"></span>
               </li>
             </ul>
@@ -235,9 +235,9 @@
         </header>
         <div class="catalog-wrapper">
           <section class="hotels-list">
-            <h2 class="visually-hidden">Список гостиниц Седоны</h2>
+            <h2 class="visually-hidden">Список гостиниц Седоны.</h2>
             <div class="hotels-searching">
-              <p class="searching-resulst">Найдено гостиниц: 38</p>
+              <p class="searching-results">Найдено гостиниц: 38</p>
             </div>
             <div class="hotels-price-selector">
               <select class="price-selector">
@@ -245,6 +245,7 @@
                 <option value="price popular">Сначала популярные</option>
                 <option value="price expensive">Сначала дорогие</option>
               </select>
+              <span class="price-arrow"></span>
             </div>
 
             <ul class="hotels-icon">
@@ -262,7 +263,7 @@
                       fill="#000"
                     />
                   </svg>
-                  <span class="visually-hidden">Показать список</span>
+                  <span class="visually-hidden">Показать список.</span>
                 </a>
               </li>
               <li class="searching-buttons-hotels hotels-cards-position">
@@ -279,7 +280,7 @@
                       fill="#000"
                     />
                   </svg>
-                  <span class="visually-hidden">Показать список</span>
+                  <span class="visually-hidden">Показать список.</span>
                 </a>
               </li>
               <li class="searching-buttons-hotels hotels-cards-position">
@@ -296,12 +297,11 @@
                       fill="#000"
                     />
                   </svg>
-                  <span class="visually-hidden">Показать карточки</span>
+                  <span class="visually-hidden">Показать карточки.</span>
                 </a>
               </li>
             </ul>
           </section>
-
           <!--КАРТОЧКИ ГОСТИНИЦ-->
           <section class="catalog-hotels">
             <ul class="catalog-cards">
@@ -313,6 +313,7 @@
                     alt="Местность Amara Resort."
                     width="300"
                     height="206"
+                    tabindex="0"
                   />
                   <h3 class="house-card-title">Amara Resort & Spa</h3>
                 </a>
@@ -346,6 +347,7 @@
                     alt="Ранорамный вид Desert Quali Inn."
                     width="300"
                     height="206"
+                    tabindex="0"
                   />
                   <h3 class="house-card-title">Desert Quail Inn</h3>
                 </a>
@@ -378,6 +380,7 @@
                     alt="Фото Villas at Poco Diablo."
                     width="300"
                     height="206"
+                    tabindex="0"
                   />
                   <h3 class="house-card-title">Villas at Poco Diablo</h3>
                 </a>
@@ -405,6 +408,7 @@
                     alt="Фото Villas at Poco Diablo."
                     width="300"
                     height="206"
+                    tabindex="0"
                   />
                   <h3 class="house-card-title">GreenTree Inn</h3>
                 </a>
@@ -437,7 +441,7 @@
           </section>
 
           <section class="paginnation-item">
-            <h3 class="visually-hidden">Пагинация</h3>
+            <h3 class="visually-hidden">Пагинация.</h3>
             <ul class="pagination-pages">
               <li class="pagination-item">
                 <a class="pagination-link buttons pagination-current"
@@ -480,12 +484,12 @@
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
-                <option>4</option>
+                <option selected>4</option>
               </select>
             </div>
           </section>
           <section class="second-sub">
-            <h3 class="visually-hidden">Переключатель страниц</h3>
+            <h3 class="visually-hidden">Переключатель страниц.</h3>
             <p class="second-sub-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
             <p class="sedona-description-info">
               Только полезная информация и никакого спама,<br />честное
@@ -512,7 +516,7 @@
         </div>
       </main>
       <footer class="page-footer">
-        <ul class="social-list">
+        <ul class="social-list social-list-catalog">
           <li class="social-item">
             <a class="social-link" href="https://twitter.com/htmlacademy">
               <svg
@@ -564,12 +568,12 @@
             </a>
           </li>
         </ul>
-        <h2 class="phone">
+        <h2 class="phone phone-catalog">
           <a class="phone" href="tel:7(812)8121212">+7(812) 812-12-12</a>
         </h2>
         <p class="logo-acadamy" tabindex="0">
           <svg
-            class="htmlAcademy-logo"
+            class="html-Academy-logo"
             width="115"
             height="34"
             fill="none"
