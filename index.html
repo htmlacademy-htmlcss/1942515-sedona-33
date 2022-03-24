@@ -19,7 +19,7 @@
               src="./images/logo-sedona.svg"
               width="139"
               height="70"
-              alt="Логотип города Седона"
+              alt="Логотип города Седона."
             />
           </a>
           <ul class="navigation-list">
@@ -75,9 +75,15 @@
       <main class="index-main">
         <section class="main-logo">
           <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
-          <div class="title-logo-sedona"></div>
-
-          <div class="title-bottom-pic"></div>
+          <div class="title-logo-sedona">
+            <img
+              class="title-logo-image"
+              src="./images/svg-welcome.svg"
+              width="458"
+              height="352"
+              alt="Добро пожаловать в Седону."
+            />
+          </div>
         </section>
         <section class="sedona-description">
           <h3 class="visually-hidden">Седона - небольшой городок в Аризоне.</h3>
@@ -204,7 +210,9 @@
           <p class="searching-hotel-sedona">Заинтересовались?</p>
           <p class="sedona-description-benefits searching-benefits">
             Укажите предполагаемые даты поездки,<br />
-            и мы покажем вам лучшие предложения гостиниц в Седоне
+            <span class="best-hotels-search">
+              и мы покажем вам лучшие предложения гостиниц в Седоне</span
+            >
           </p>
           <a class="buttons button-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         </section>
@@ -288,7 +296,7 @@
           </li>
         </ul>
         <h2 class="phone">
-          <a class="phone" href="tel:78128121212">+7(812) 812-12-12</a>
+          <a class="phone" href="tel:78128121212">+7 (812) 812-12-12</a>
         </h2>
         <p class="logo-acadamy" tabindex="0">
           <svg
@@ -308,7 +316,7 @@
 
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
@@ -352,38 +360,39 @@
               <label class="modal-text people-adult" for="adult"
                 >Взрослые:</label
               >
-              <button class="button-minus adult-minus" type="button">
-                <svg
-                  class="plus-minus"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M3 9V11H17V9H3Z" />
-                </svg>
-              </button>
+              <div class="adult-form-button">
+                <button class="button-minus adult-minus" type="button">
+                  <svg
+                    class="plus-minus"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M3 9V11H17V9H3Z" />
+                  </svg>
+                </button>
 
-              <input
-                class="auth-form-field field-numb"
-                type="number"
-                id="adult"
-                name="numbers"
-                value="2"
-              />
-              <button class="button-plus adult-plus" type="button">
-                <svg
-                  class="plus"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
-                </svg>
-              </button>
-
+                <input
+                  class="auth-form-field field-numb"
+                  type="number"
+                  id="adult"
+                  name="numbers"
+                  value="2"
+                />
+                <button class="button-plus adult-plus" type="button">
+                  <svg
+                    class="plus"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                  </svg>
+                </button>
+              </div>
               <label class="modal-text people-child"
                 >Дети:
                 <span class="form-label form-label-icon">
@@ -418,35 +427,37 @@
                   </span>
                 </span>
               </label>
-              <button class="button-minus child-minus" type="button">
-                <svg
-                  class="plus-minus"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M3 9V11H17V9H3Z" />
-                </svg>
-              </button>
-              <input
-                class="auth-form-field field-numb"
-                type="number"
-                id="child"
-                name="auth-password"
-                value="1"
-              />
-              <button class="button-plus child-plus" type="button">
-                <svg
-                  class="plus"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
-                </svg>
-              </button>
+              <div class="adult-form-button child-form">
+                <button class="button-minus child-minus" type="button">
+                  <svg
+                    class="plus-minus"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M3 9V11H17V9H3Z" />
+                  </svg>
+                </button>
+                <input
+                  class="auth-form-field field-numb"
+                  type="number"
+                  id="child"
+                  name="auth-password"
+                  value="1"
+                />
+                <button class="button-plus child-plus" type="button">
+                  <svg
+                    class="plus"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                  </svg>
+                </button>
+              </div>
             </div>
             <button class="modal-search-button" type="submit">Найти</button>
           </form>
