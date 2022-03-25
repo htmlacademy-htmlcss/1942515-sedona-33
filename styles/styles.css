@@ -340,7 +340,7 @@ body {
   background-position-x: 163px;
   background-position-y: 89px;
 }
-.suggestions-item-2 {
+.suggestions-item-second {
   padding: 98px 80px 108px 81px;
   margin: 0;
   line-height: px;
@@ -376,7 +376,7 @@ body {
   margin-bottom: 18px;
   text-transform: uppercase;
 }
-.big-suggestions-2 {
+.big-suggestions-second {
   padding: top 0;
 }
 .suggest-description {
@@ -386,7 +386,7 @@ body {
   margin: 0;
   margin-bottom: 30px;
 }
-.suggest-description-2 {
+.suggest-description-second {
   margin-top: 50px;
   color: #e5e5e5;
 }
@@ -397,7 +397,7 @@ body {
 .second-list {
   margin-bottom: 61px;
 }
-.description-2 {
+.description-second {
   margin-top: 30px;
   margin-bottom: 35x;
 }
@@ -760,7 +760,7 @@ body {
 .radio-filters-group {
   margin-right: 169px;
 }
-.hotels-filter-group-2 {
+.hotels-filter-group-second {
   max-width: 306px;
   min-height: auto;
   margin-right: 61px;
@@ -847,6 +847,7 @@ body {
   border: none;
 }
 .range-input {
+  border: none;
   background-color: transparent;
   width: 124px;
   height: 43px;
@@ -876,17 +877,22 @@ body {
 .min-range {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+  height: 38px;
+  padding-top: 6px;
   padding-left: 17px;
 }
 .max-range {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
+  height: 38px;
+  padding-top: 6px;
+  padding-left: 16px;
 }
 .catalog-filter-label {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 .place-min {
   position: relative;
@@ -933,7 +939,7 @@ body {
   outline: none;
   opacity: 0.3;
 }
-.services-list-1 {
+.services-list-first {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -942,7 +948,7 @@ body {
   list-style-type: none;
   margin-bottom: 10px;
 }
-.services-list-2 {
+.services-list-second {
   margin-left: 100px;
 }
 .infrastructure {
@@ -1167,7 +1173,7 @@ body {
 .svg-hotels {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 4px;
   bottom: 0;
   left: 0;
   margin: auto;
@@ -1427,13 +1433,13 @@ body {
 .price {
   size: 18px;
 }
-.small-city-subscribe-2 {
+.small-city-subscribe-second {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   color: rgb(0, 0, 0);
 }
-.five-principles-2 {
+.five-principles-second {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
